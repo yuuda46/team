@@ -9,7 +9,6 @@ import java.util.List;
 
 import BEAN.Post;
 
-//Postテーブルの中のデータを全て取り出す
 public class PostDAO extends DAO {
 	private String jdbcURL;
     private String jdbcUsername;
@@ -28,6 +27,8 @@ public class PostDAO extends DAO {
     	Connection con = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
         return con;
     }
+
+  //Postテーブルの中のデータを全て取り出す
 	public List<Post> all() throws Exception {
 		List<Post> list=new ArrayList<>();
 
