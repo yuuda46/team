@@ -9,6 +9,7 @@ import java.util.List;
 
 import BEAN.Post;
 
+//Postテーブルの中のデータを全て取り出す
 public class PostDAO extends DAO {
 	private String jdbcURL;
     private String jdbcUsername;
